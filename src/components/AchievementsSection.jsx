@@ -26,7 +26,7 @@ export default function AchievementsSection() {
   return (
     <section id="achievements" className="relative bg-black py-12 sm:py-16 lg:py-20 overflow-hidden">
       {/* Background image on right */}
-      <div className="absolute right-0 top-0 h-full w-[45%] lg:w-1/2 overflow-hidden pointer-events-none z-0">
+      <div className="absolute right-0 top-0 h-full w-[30%] lg:w-1/2 overflow-hidden pointer-events-none z-0 opacity-50 lg:opacity-100">
         <img
           src="./image/bg%20section%203.png"
           className="h-full w-full object-cover object-right"

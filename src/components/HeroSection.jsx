@@ -19,7 +19,7 @@ export default function HeroSection() {
       />
 
       {/* Background image on right */}
-      <div className="absolute right-0 inset-y-0 w-[45%] lg:w-1/2 overflow-hidden pointer-events-none z-[2]">
+      <div className="absolute right-0 inset-y-0 w-[30%] lg:w-1/2 overflow-hidden pointer-events-none z-[2] opacity-50 lg:opacity-100">
         <img
           src="./image/background_section1.png"
           className="h-full w-full object-cover object-right"

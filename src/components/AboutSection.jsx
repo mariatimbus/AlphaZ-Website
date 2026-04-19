@@ -8,7 +8,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="relative bg-black py-12 sm:py-16 lg:py-20 overflow-hidden">
       {/* Background image on left */}
-      <div className="absolute left-0 inset-y-0 w-[45%] lg:w-[30%] overflow-hidden pointer-events-none z-0">
+      <div className="absolute left-0 inset-y-0 w-[30%] lg:w-[30%] overflow-hidden pointer-events-none z-0 opacity-50 lg:opacity-100">
         <img
           src="./image/background_section1_flipped.png"
           className="h-full w-full object-cover object-left"
