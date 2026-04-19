@@ -1,0 +1,45 @@
+<!--
+  ============================================
+  TEMPLATE VITE – punctul de pornire al aplicației
+  ============================================
+  Acest fișier NU este pagina finală. Este doar
+  „scheletul” pe care Vite îl folosește la build
+  pentru a genera site-ul complet în folderul dist/.
+
+  Ce face fiecare parte:
+  – <meta charset>       → caractere UTF-8 (diacritice, emoji etc.)
+  – <meta viewport>      → scalare corectă pe telefoane
+  – <link rel="icon">    → iconița din bara de browser
+  – <link preconnect>    → conectare anticipată la Google Fonts
+  – <link fonts>         → fonturile Audiowide și Lato
+  – <div id="root">      → aici React montează toată aplicația
+  – <script>             → încarcă fișierul principal React
+
+  PENTRU PREVIZUALIZARE: deschide dist/index.html
+  (acela e fișierul final, cu tot CSS+JS inline)
+  ============================================
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Setări de bază -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Titlu pagină + favicon -->
+    <title>AlphaZ #11141</title>
+    <link rel="icon" type="image/png" href="/AlphaZ-Website/icon.png" />
+
+    <!-- Fonturi Google: Audiowide (titluri) + Lato (text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/AlphaZ-Website/assets/main-DUnY-7h4.js"></script>
+    <link rel="modulepreload" crossorigin href="/AlphaZ-Website/assets/useScrollAnimate-BjKwFXfl.js">
+    <link rel="stylesheet" crossorigin href="/AlphaZ-Website/assets/useScrollAnimate-kMmbaMGn.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
