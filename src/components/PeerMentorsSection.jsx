@@ -51,6 +51,7 @@ export default function PeerMentorsSection() {
                     src={mentor.image}
                     alt={mentor.name}
                     className="w-full h-full object-cover block"
+                    style={{ transform: 'scale(1.4)', objectPosition: 'center 15%' }}
                   />
                 </div>
 
