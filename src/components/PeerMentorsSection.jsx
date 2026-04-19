@@ -26,7 +26,7 @@ export default function PeerMentorsSection() {
 
         <div
           ref={gridRef}
-          className={`grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6 ${
+          className={`grid grid-cols-2 gap-4 sm:gap-5 lg:gap-6 max-w-[600px] mx-auto ${
             gridVisible ? 'animate-fade-in-up delay-1' : 'opacity-0'
           }`}
         >

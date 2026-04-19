@@ -20,7 +20,6 @@ export default function TeamPage() {
       <TeamSection />
       <TeamGridSection />
       <PeerMentorsSection />
-      <MentorsSection />
     </>
   );
 }

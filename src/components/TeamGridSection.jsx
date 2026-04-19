@@ -57,7 +57,10 @@ export default function TeamGridSection() {
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover block"
-                    style={{ transform: 'scale(1.4)', objectPosition: 'center 15%' }}
+                    style={{
+                      transform: member.name === 'Timbus Maria' || member.name === 'Zamfira Rares' ? 'scale(1.15)' : 'scale(1.4)',
+                      objectPosition: member.name === 'Timbus Maria' || member.name === 'Zamfira Rares' ? 'center 30%' : 'center 15%',
+                    }}
                   />
                 </div>
 
