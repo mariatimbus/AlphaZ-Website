@@ -8,7 +8,6 @@ const teamNavItems = [
   { label: 'Home', href: 'index.html' },
   { label: 'About', href: 'index.html#about' },
   { label: 'Team', href: 'team.html' },
-  { label: 'Press', href: 'index.html#' },
   { label: 'Sponsors', href: 'index.html#sponsors' },
   { label: 'Road to Worlds', href: 'https://donez.alphaz.ro', external: true },
 ];
