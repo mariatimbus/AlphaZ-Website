@@ -78,6 +78,17 @@ body {
   margin: 0 auto;
 }
 
+.trophy-star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #888;
+  font-size: 16px;
+  line-height: 1;
+  pointer-events: none;
+}
+
 /* Animation keyframes */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(40px); }
@@ -153,5 +164,8 @@ body {
   .trophy-base {
     width: 24px;
     height: 5px;
+  }
+  .trophy-star {
+    font-size: 12px;
   }
 }

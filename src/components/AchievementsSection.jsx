@@ -2,8 +2,8 @@ import { useScrollAnimate } from '../hooks/useScrollAnimate';
 
 const achievements = [
   { title: 'Rookie All-Star', subtitle: 'Award Winner', highlight: '' },
-  { title: '1st Pick', subtitle: 'Alliance 4', highlight: 'Ankara Regional' },
   { title: 'Quality', subtitle: 'Award Winner', highlight: '' },
+  { title: '1st Pick', subtitle: 'Alliance 4', highlight: 'Ankara Regional' },
   { title: 'Captain', subtitle: 'Alliance 3', highlight: 'Başkent Regional' },
 ];
 
@@ -12,7 +12,9 @@ function Trophy() {
     <div className="w-[45px] h-[60px] sm:w-[55px] sm:h-[70px] lg:w-[70px] lg:h-[90px] mb-2 sm:mb-3 lg:mb-5 relative">
       <div className="trophy-handle trophy-handle-left" />
       <div className="trophy-handle trophy-handle-right" />
-      <div className="trophy-body" />
+      <div className="trophy-body">
+        <div className="trophy-star">★</div>
+      </div>
       <div className="trophy-stem" />
       <div className="trophy-base" />
     </div>
@@ -75,28 +77,13 @@ export default function AchievementsSection() {
                       <br />
                       {ach.subtitle}
                     </p>
+                    {ach.highlight && (
+                      <span className="font-[Audiowide] text-[#67fefe] text-sm sm:text-base lg:text-[22px]">
+                        {ach.highlight}
+                      </span>
+                    )}
                   </div>
                 ))}
-              </div>
-
-              {/* Regional labels spanning pairs of trophies */}
-              <div className="hidden lg:grid grid-cols-4 gap-8 -mt-4">
-                <span className="col-span-2 text-center font-[Audiowide] text-[#67fefe] text-[22px]">
-                  Ankara Regional
-                </span>
-                <span className="col-span-2 text-center font-[Audiowide] text-[#67fefe] text-[22px]">
-                  Başkent Regional
-                </span>
-              </div>
-
-              {/* Mobile labels */}
-              <div className="lg:hidden flex justify-around">
-                <span className="font-[Audiowide] text-[#67fefe] text-sm sm:text-base text-center">
-                  Ankara Regional
-                </span>
-                <span className="font-[Audiowide] text-[#67fefe] text-sm sm:text-base text-center">
-                  Başkent Regional
-                </span>
               </div>
 
               <div className="bg-gradient-to-r from-[#3a8a9a] to-[#5aaaaa] py-3 sm:py-4 lg:py-5 px-4 sm:px-6 lg:px-10 text-center font-[Audiowide] text-white text-sm sm:text-base lg:text-[22px] rounded-lg w-full">
