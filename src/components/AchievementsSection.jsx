@@ -1,10 +1,10 @@
 import { useScrollAnimate } from '../hooks/useScrollAnimate';
 
 const achievements = [
-  { title: 'Rookie All-Star', subtitle: 'Award Winner', highlight: '' },
-  { title: '1st Pick', subtitle: 'Alliance 4', highlight: 'Ankara Regional' },
-  { title: 'Quality', subtitle: 'Award Winner', highlight: '' },
-  { title: 'Captain', subtitle: 'Alliance 3', highlight: 'Başkent Regional' },
+  { title: 'TRB Rookie', subtitle: 'Ankara' },
+  { title: '1st Pick TRB', subtitle: 'Ankara' },
+  { title: 'Quality', subtitle: 'Başkent' },
+  { title: 'Captain 3', subtitle: 'Başkent' },
 ];
 
 function Trophy() {
@@ -85,16 +85,6 @@ export default function AchievementsSection() {
                   Ankara Regional
                 </span>
                 <span className="col-span-2 text-center font-[Audiowide] text-[#67fefe] text-[22px]">
-                  Başkent Regional
-                </span>
-              </div>
-
-              {/* Mobile labels */}
-              <div className="lg:hidden flex justify-around">
-                <span className="font-[Audiowide] text-[#67fefe] text-sm sm:text-base text-center">
-                  Ankara Regional
-                </span>
-                <span className="font-[Audiowide] text-[#67fefe] text-sm sm:text-base text-center">
                   Başkent Regional
                 </span>
               </div>
