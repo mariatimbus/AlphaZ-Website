@@ -1,14 +1,14 @@
 import { useScrollAnimate } from '../hooks/useScrollAnimate';
 
 const teamMembers = [
-  { name: 'Constantinescu Alice', role: 'Management', image: './image/Team/Alice%20Constantinescu.PNG' },
-  { name: 'Timbus Maria', role: 'PR & Marketing', image: './image/Team/Maria%20Timbus.png' },
-  { name: 'Ciornai Alexandru', role: 'Engineering', image: './image/Team/Alexandru-Ciornai.png' },
-  { name: 'Perja Ianis', role: 'Engineering', image: './image/Team/Ianis-Perja.png' },
-  { name: 'Diaconeasa Mihai', role: 'Engineering', image: './image/Team/Mihai-Diaconeasa.png' },
-  { name: 'Burtan Ovidiu', role: 'Engineering', image: './image/Team/Ovidiu-Burtan.png' },
-  { name: 'Zamfira Rares', role: 'Engineering', image: './image/Team/Rares-Zamfira.png' },
-  { name: 'Ghita Robert', role: 'Engineering', image: './image/Team/Robert-Ghita.png' },
+  { name: 'Constantinescu Alice', role: 'Non-Technical Department', image: './image/Team/Alice%20Constantinescu.PNG' },
+  { name: 'Timbus Maria', role: 'Non-Technical Department', image: './image/Team/Maria%20Timbus.png' },
+  { name: 'Ciornai Alexandru', role: 'Technical Department', image: './image/Team/Alexandru-Ciornai.png' },
+  { name: 'Perja Ianis', role: 'Technical Department', image: './image/Team/Ianis-Perja.png' },
+  { name: 'Diaconeasa Mihai', role: 'Technical Department', image: './image/Team/Mihai-Diaconeasa.png' },
+  { name: 'Burtan Ovidiu', role: 'Technical Department', image: './image/Team/Ovidiu-Burtan.png' },
+  { name: 'Zamfira Rares', role: 'Technical Department', image: './image/Team/Rares-Zamfira.png' },
+  { name: 'Ghita Robert', role: 'Technical Department', image: './image/Team/Robert-Ghita.png' },
 ];
 
 export default function TeamGridSection() {
