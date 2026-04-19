@@ -1,10 +1,8 @@
 import { useScrollAnimate } from '../hooks/useScrollAnimate';
 
 const peerMentors = [
-  { name: 'Timbus Maria', role: 'Pr & Marketing', image: './image/Team/Maria%20Timbus.png' },
-  { name: 'Timbus Maria', role: 'Pr & Marketing', image: './image/image.jpg' },
-  { name: 'Timbus Maria', role: 'Pr & Marketing', image: './image/image.jpg' },
-  { name: 'Timbus Maria', role: 'Pr & Marketing', image: './image/image.jpg' },
+  { name: 'Olaru Bianca', role: 'Peer Mentor', image: './image/Team/Bianca-Olaru.png' },
+  { name: 'Popidan Cristian', role: 'Peer Mentor', image: './image/Team/Cristian-Popidan.png' },
 ];
 
 export default function PeerMentorsSection() {
