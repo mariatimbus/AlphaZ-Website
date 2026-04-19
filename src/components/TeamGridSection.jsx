@@ -57,6 +57,7 @@ export default function TeamGridSection() {
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover block"
+                    style={member.name === 'Constantinescu Alice' ? { transform: 'scale(1.4)', objectPosition: 'center 15%' } : undefined}
                   />
                 </div>
 
