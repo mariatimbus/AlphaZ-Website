@@ -8,13 +8,14 @@ export default function AboutSection() {
   return (
     <section id="about" className="relative bg-black py-12 sm:py-16 lg:py-20 overflow-hidden">
       {/* Background image on left */}
-      <div
-        className="absolute left-0 inset-y-0 w-[40%] lg:w-[30%] bg-no-repeat bg-left bg-cover z-0 pointer-events-none"
-        style={{
-          backgroundImage: "url('./image/background_section1.png')",
-          transform: 'scaleX(-1)',
-        }}
-      />
+      <div className="absolute left-0 inset-y-0 w-[45%] lg:w-[30%] overflow-hidden pointer-events-none z-0">
+        <img
+          src="./image/background_section1_flipped.png"
+          className="h-full w-full object-cover object-left"
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
 
       <div className="relative z-[1] max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-10">
         <div

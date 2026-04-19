@@ -26,10 +26,14 @@ export default function AchievementsSection() {
   return (
     <section id="achievements" className="relative bg-black py-12 sm:py-16 lg:py-20 overflow-hidden">
       {/* Background image on right */}
-      <div
-        className="absolute right-0 top-0 h-full w-[40%] lg:w-1/2 bg-no-repeat bg-right bg-contain z-0 pointer-events-none"
-        style={{ backgroundImage: "url('./image/bg%20section%203.png')" }}
-      />
+      <div className="absolute right-0 top-0 h-full w-[45%] lg:w-1/2 overflow-hidden pointer-events-none z-0">
+        <img
+          src="./image/bg%20section%203.png"
+          className="h-full w-full object-cover object-right"
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
 
       <div className="relative z-[1] max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-10 pointer-events-none">
         <div className="pointer-events-auto">
