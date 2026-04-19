@@ -44,10 +44,18 @@ export default function TeamSection() {
             After a dominant 2025 FTC season, where our alliance set 7 of the top 10 World Records and
             won the Maryland Tech Invitational (MTI), we knew it was time for the next step.
           </p>
-          <p className="font-[Lato] text-base sm:text-lg lg:text-xl text-[#ddd] leading-relaxed">
+          <p className="font-[Lato] text-base sm:text-lg lg:text-xl text-[#ddd] leading-relaxed mb-6 sm:mb-8 lg:mb-10">
             That is why AlphaZ was created: to bring industrial-scale engineering to Romania and
             prove that FRC-level excellence is possible here.
           </p>
+
+          <div className="rounded-3xl overflow-hidden max-w-[500px] mx-auto">
+            <img
+              src="./image/image%205.jpeg"
+              alt="Team photo"
+              className="w-full h-auto block"
+            />
+          </div>
         </div>
       </div>
     </section>
