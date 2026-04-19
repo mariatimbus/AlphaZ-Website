@@ -20,7 +20,7 @@ export default function HeroSection() {
 
       {/* Background image on right */}
       <div
-        className="absolute right-0 inset-y-0 w-[25%] lg:w-1/2 bg-no-repeat bg-right bg-contain z-[2] pointer-events-none opacity-60 lg:opacity-100"
+        className="absolute right-0 inset-y-0 w-[40%] lg:w-1/2 bg-no-repeat bg-right bg-contain z-[2] pointer-events-none"
         style={{ backgroundImage: "url('./image/background_section1.png')" }}
       />
 

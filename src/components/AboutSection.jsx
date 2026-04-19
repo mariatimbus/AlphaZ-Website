@@ -9,7 +9,7 @@ export default function AboutSection() {
     <section id="about" className="relative bg-black py-12 sm:py-16 lg:py-20 overflow-hidden">
       {/* Background image on left */}
       <div
-        className="absolute left-0 inset-y-0 w-[25%] lg:w-[30%] bg-no-repeat bg-left bg-cover z-0 pointer-events-none opacity-60 lg:opacity-100"
+        className="absolute left-0 inset-y-0 w-[40%] lg:w-[30%] bg-no-repeat bg-left bg-cover z-0 pointer-events-none"
         style={{
           backgroundImage: "url('./image/background_section1.png')",
           transform: 'scaleX(-1)',
