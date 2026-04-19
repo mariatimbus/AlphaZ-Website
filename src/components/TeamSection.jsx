@@ -8,7 +8,7 @@ export default function TeamSection() {
     <section id="team" className="relative bg-black py-12 sm:py-16 lg:py-20 overflow-hidden min-h-[100dvh] flex flex-col">
       {/* Background image on left — from AboutSection */}
       <div
-        className="absolute left-0 inset-y-0 w-[30%] bg-no-repeat bg-left bg-cover z-0 pointer-events-none max-lg:hidden"
+        className="absolute left-0 inset-y-0 w-[25%] lg:w-[30%] bg-no-repeat bg-left bg-cover z-0 pointer-events-none opacity-60 lg:opacity-100"
         style={{
           backgroundImage: "url('./image/background_section1.png')",
           transform: 'scaleX(-1)',
@@ -17,7 +17,7 @@ export default function TeamSection() {
 
       {/* Background image on right — from HeroSection */}
       <div
-        className="absolute right-0 inset-y-0 w-1/2 bg-no-repeat bg-right bg-contain z-[2] pointer-events-none max-lg:hidden"
+        className="absolute right-0 inset-y-0 w-[25%] lg:w-1/2 bg-no-repeat bg-right bg-contain z-[2] pointer-events-none opacity-60 lg:opacity-100"
         style={{ backgroundImage: "url('./image/background_section1.png')" }}
       />
 
