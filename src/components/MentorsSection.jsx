@@ -25,43 +25,45 @@ export default function MentorsSection() {
 
         <div
           ref={gridRef}
-          className={`flex justify-center ${
+          className={`grid grid-cols-2 gap-4 sm:gap-5 lg:gap-6 max-w-[600px] mx-auto ${
             gridVisible ? 'animate-fade-in-up delay-1' : 'opacity-0'
           }`}
         >
           {mentors.map((mentor, index) => (
             <div
               key={index}
-              className="relative flex flex-col items-center w-[calc(50%-8px)] sm:w-[calc(33.333%-13.333px)] lg:w-[calc(25%-18px)]"
+              className="col-span-2 flex justify-center"
             >
-              {/* Card with background */}
-              <div
-                className="w-full rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] overflow-hidden flex flex-col items-center p-2.5 sm:p-3 lg:p-4"
-                style={{
-                  backgroundImage: "url('./image/card.png')",
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center top',
-                  aspectRatio: '883 / 1220',
-                }}
-              >
-                {/* Photo */}
-                <div className="w-full flex-1 overflow-hidden rounded-xl sm:rounded-2xl">
-                  <img
-                    src={mentor.image}
-                    alt={mentor.name}
-                    className="w-full h-full object-cover block"
-                    style={{ transform: 'scale(1)', objectPosition: 'center 15%' }}
-                  />
-                </div>
+              <div className="relative flex flex-col items-center w-[calc(50%-8px)] sm:w-[calc(50%-10px)] lg:w-[calc(50%-12px)]">
+                {/* Card with background */}
+                <div
+                  className="w-full rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] overflow-hidden flex flex-col items-center p-2.5 sm:p-3 lg:p-4"
+                  style={{
+                    backgroundImage: "url('./image/card.png')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center top',
+                    aspectRatio: '883 / 1220',
+                  }}
+                >
+                  {/* Photo */}
+                  <div className="w-full flex-1 overflow-hidden rounded-xl sm:rounded-2xl">
+                    <img
+                      src={mentor.image}
+                      alt={mentor.name}
+                      className="w-full h-full object-cover block"
+                      style={{ transform: 'scale(1)', objectPosition: 'center 15%' }}
+                    />
+                  </div>
 
-                {/* Text inside card */}
-                <div className="w-full pt-2 sm:pt-3 text-center">
-                  <p className="font-[Audiowide] text-white text-xs sm:text-sm lg:text-base leading-tight">
-                    {mentor.name}
-                  </p>
-                  <p className="font-[Lato] text-[#67fefe] text-[10px] sm:text-xs lg:text-sm leading-tight mt-0.5">
-                    {mentor.role}
-                  </p>
+                  {/* Text inside card */}
+                  <div className="w-full pt-2 sm:pt-3 text-center">
+                    <p className="font-[Audiowide] text-white text-xs sm:text-sm lg:text-base leading-tight">
+                      {mentor.name}
+                    </p>
+                    <p className="font-[Lato] text-[#67fefe] text-[10px] sm:text-xs lg:text-sm leading-tight mt-0.5">
+                      {mentor.role}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
