@@ -3,7 +3,7 @@ import { useState } from 'react';
 const defaultNavItems = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
-  { label: 'Team', href: 'team.html' },
+  { label: 'Team', href: '/team/' },
   { label: 'Sponsors', href: '#sponsors' },
   { label: 'Road to Worlds', href: 'https://donez.alphaz.ro', external: true },
 ];

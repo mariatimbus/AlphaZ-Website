@@ -10,7 +10,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './index.html',
-        team: './team.html',
+        team: './team/index.html',
       },
     },
   },
