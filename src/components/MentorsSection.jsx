@@ -25,18 +25,18 @@ export default function MentorsSection() {
 
         <div
           ref={gridRef}
-          className={`flex justify-center gap-4 sm:gap-5 lg:gap-6 ${
+          className={`flex justify-center ${
             gridVisible ? 'animate-fade-in-up delay-1' : 'opacity-0'
           }`}
         >
           {mentors.map((mentor, index) => (
             <div
               key={index}
-              className="relative flex flex-col items-center"
+              className="relative flex flex-col items-center w-[calc(50%-8px)] sm:w-[calc(33.333%-13.333px)] lg:w-[calc(25%-18px)]"
             >
               {/* Card with background */}
               <div
-                className="w-full max-w-[280px] rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] overflow-hidden flex flex-col items-center p-2.5 sm:p-3 lg:p-4"
+                className="w-full rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] overflow-hidden flex flex-col items-center p-2.5 sm:p-3 lg:p-4"
                 style={{
                   backgroundImage: "url('./image/card.png')",
                   backgroundSize: 'cover',
