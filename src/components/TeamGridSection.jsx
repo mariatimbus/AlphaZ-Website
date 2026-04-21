@@ -1,8 +1,8 @@
 import { useScrollAnimate } from '../hooks/useScrollAnimate';
 
 const teamMembers = [
-  { name: 'Constantinescu Alice', role: 'Non-Technical Department', image: './image/Team/Alice%20Constantinescu.PNG' },
   { name: 'Timbus Maria', role: 'Non-Technical Department', image: './image/Team/Maria%20Timbus.png' },
+  { name: 'Constantinescu Alice', role: 'Non-Technical Department', image: './image/Team/Alice%20Constantinescu.PNG' },
   { name: 'Ciornai Alexandru', role: 'Technical Department', image: './image/Team/Alexandru-Ciornai.png' },
   { name: 'Perja Ianis', role: 'Technical Department', image: './image/Team/Ianis-Perja.png' },
   { name: 'Diaconeasa Mihai', role: 'Technical Department', image: './image/Team/Mihai-Diaconeasa.png' },
