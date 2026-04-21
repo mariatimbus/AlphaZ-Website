@@ -1,10 +1,7 @@
 import { useScrollAnimate } from '../hooks/useScrollAnimate';
 
 const mentors = [
-  { name: 'Timbus Maria', role: 'Pr & Marketing', image: './image/Team/Maria%20Timbus.png' },
-  { name: 'Timbus Maria', role: 'Pr & Marketing', image: './image/image.jpg' },
-  { name: 'Timbus Maria', role: 'Pr & Marketing', image: './image/image.jpg' },
-  { name: 'Timbus Maria', role: 'Pr & Marketing', image: './image/image.jpg' },
+  { name: 'Alex Deonise', role: 'Mentor', image: './image/Team/Mentors/Alex%20deonise.png' },
 ];
 
 export default function MentorsSection() {
@@ -28,7 +25,7 @@ export default function MentorsSection() {
 
         <div
           ref={gridRef}
-          className={`grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6 ${
+          className={`flex justify-center gap-4 sm:gap-5 lg:gap-6 ${
             gridVisible ? 'animate-fade-in-up delay-1' : 'opacity-0'
           }`}
         >
@@ -39,7 +36,7 @@ export default function MentorsSection() {
             >
               {/* Card with background */}
               <div
-                className="w-full rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] overflow-hidden flex flex-col items-center p-2.5 sm:p-3 lg:p-4"
+                className="w-full max-w-[280px] rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] overflow-hidden flex flex-col items-center p-2.5 sm:p-3 lg:p-4"
                 style={{
                   backgroundImage: "url('./image/card.png')",
                   backgroundSize: 'cover',

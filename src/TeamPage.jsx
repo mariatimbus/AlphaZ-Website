@@ -18,6 +18,7 @@ export default function TeamPage() {
       <Navbar items={teamNavItems} />
       <TeamSection />
       <TeamGridSection />
+      <MentorsSection />
       <PeerMentorsSection />
     </>
   );
