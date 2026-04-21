@@ -11,7 +11,7 @@ export default function AboutSection() {
       <div
         className="absolute left-0 inset-y-0 w-[30%] bg-no-repeat bg-left bg-cover z-0 pointer-events-none max-lg:hidden"
         style={{
-          backgroundImage: "url('./image/background_section1.png')",
+          backgroundImage: "url('/image/background_section1.png')",
           transform: 'scaleX(-1)',
         }}
       />
@@ -48,21 +48,21 @@ export default function AboutSection() {
         >
           <div className="rounded-2xl overflow-hidden flex-shrink-0 transition-all duration-400 hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(103,254,254,0.15)] w-full sm:w-[280px] sm:h-[320px] lg:w-[320px] lg:h-[380px]">
             <img
-              src="./image/image%201.jpeg"
+              src="/image/image%201.jpeg"
               alt="Team image 1"
               className="w-full h-full object-cover block"
             />
           </div>
           <div className="rounded-2xl overflow-hidden flex-shrink-0 transition-all duration-400 hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(103,254,254,0.15)] w-full sm:w-[320px] sm:h-[400px] lg:w-[360px] lg:h-[480px]">
             <img
-              src="./image/image%202.jpeg"
+              src="/image/image%202.jpeg"
               alt="Team image 2"
               className="w-full h-full object-cover block"
             />
           </div>
           <div className="rounded-2xl overflow-hidden flex-shrink-0 transition-all duration-400 hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(103,254,254,0.15)] w-full sm:w-[280px] sm:h-[320px] lg:w-[320px] lg:h-[380px]">
             <img
-              src="./image/image%203.jpeg"
+              src="/image/image%203.jpeg"
               alt="Team image 3"
               className="w-full h-full object-cover block"
             />

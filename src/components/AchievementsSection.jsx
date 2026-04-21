@@ -30,7 +30,7 @@ export default function AchievementsSection() {
       {/* Background image on right — desktop only */}
       <div
         className="absolute right-0 top-0 h-full w-1/2 bg-no-repeat bg-right bg-contain z-0 pointer-events-none max-lg:hidden"
-        style={{ backgroundImage: "url('./image/bg%20section%203.png')" }}
+        style={{ backgroundImage: "url('/image/bg%20section%203.png')" }}
       />
 
       <div className="relative z-[1] max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-10 pointer-events-none">
@@ -54,7 +54,7 @@ export default function AchievementsSection() {
             {/* Left logo card */}
             <div className="flex-[0_0_160px] sm:flex-[0_0_200px] lg:flex-[0_0_260px] flex items-center justify-center bg-black/40 border-2 border-white/20 rounded-2xl p-4 sm:p-6 max-lg:w-[160px] sm:max-lg:w-[200px]">
               <img
-                src="./image/logo%20rebuild.png"
+                src="/image/logo%20rebuild.png"
                 alt="Rebuilt"
                 className="max-w-full h-auto block"
               />

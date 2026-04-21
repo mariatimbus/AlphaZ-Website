@@ -6,7 +6,7 @@ export default function CTASection() {
   return (
     <section
       className="relative w-full min-h-[280px] sm:min-h-[350px] lg:min-h-[45vh] max-h-[500px] bg-no-repeat bg-center bg-cover flex items-center justify-center overflow-hidden"
-      style={{ backgroundImage: "url('./image/image.jpg')" }}
+      style={{ backgroundImage: "url('/image/image.jpg')" }}
     >
       <div className="absolute inset-0 bg-black/55 z-[1]" />
 

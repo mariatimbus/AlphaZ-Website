@@ -1,14 +1,14 @@
 import { useScrollAnimate } from '../hooks/useScrollAnimate';
 
 const teamMembers = [
-  { name: 'Timbus Maria', role: 'Non-Technical Department', image: './image/Team/Maria%20Timbus.png' },
-  { name: 'Constantinescu Alice', role: 'Non-Technical Department', image: './image/Team/Alice%20Constantinescu.PNG' },
-  { name: 'Ciornai Alexandru', role: 'Technical Department', image: './image/Team/Alexandru-Ciornai.png' },
-  { name: 'Perja Ianis', role: 'Technical Department', image: './image/Team/Ianis-Perja.png' },
-  { name: 'Diaconeasa Mihai', role: 'Technical Department', image: './image/Team/Mihai-Diaconeasa.png' },
-  { name: 'Burtan Ovidiu', role: 'Technical Department', image: './image/Team/Ovidiu-Burtan.png' },
-  { name: 'Zamfira Rares', role: 'Technical Department', image: './image/Team/Rares-Zamfira.png' },
-  { name: 'Ghita Robert', role: 'Technical Department', image: './image/Team/Robert-Ghita.png' },
+  { name: 'Timbus Maria', role: 'Non-Technical Department', image: '/image/Team/Maria%20Timbus.png' },
+  { name: 'Constantinescu Alice', role: 'Non-Technical Department', image: '/image/Team/Alice%20Constantinescu.PNG' },
+  { name: 'Ciornai Alexandru', role: 'Technical Department', image: '/image/Team/Alexandru-Ciornai.png' },
+  { name: 'Perja Ianis', role: 'Technical Department', image: '/image/Team/Ianis-Perja.png' },
+  { name: 'Diaconeasa Mihai', role: 'Technical Department', image: '/image/Team/Mihai-Diaconeasa.png' },
+  { name: 'Burtan Ovidiu', role: 'Technical Department', image: '/image/Team/Ovidiu-Burtan.png' },
+  { name: 'Zamfira Rares', role: 'Technical Department', image: '/image/Team/Rares-Zamfira.png' },
+  { name: 'Ghita Robert', role: 'Technical Department', image: '/image/Team/Robert-Ghita.png' },
 ];
 
 export default function TeamGridSection() {
@@ -45,7 +45,7 @@ export default function TeamGridSection() {
               <div
                 className="w-full rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] overflow-hidden flex flex-col items-center p-2.5 sm:p-3 lg:p-4"
                 style={{
-                  backgroundImage: "url('./image/card.png')",
+                  backgroundImage: "url('/image/card.png')",
                   backgroundSize: 'cover',
                   backgroundPosition: 'center top',
                   aspectRatio: '883 / 1220',

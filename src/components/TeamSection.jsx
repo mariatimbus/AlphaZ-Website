@@ -10,7 +10,7 @@ export default function TeamSection() {
       <div
         className="absolute left-0 inset-y-0 w-[30%] bg-no-repeat bg-left bg-cover z-0 pointer-events-none max-lg:hidden"
         style={{
-          backgroundImage: "url('./image/background_section1.png')",
+          backgroundImage: "url('/image/background_section1.png')",
           transform: 'scaleX(-1)',
         }}
       />
@@ -18,7 +18,7 @@ export default function TeamSection() {
       {/* Background image on right — desktop only */}
       <div
         className="absolute right-0 inset-y-0 w-1/2 bg-no-repeat bg-right bg-contain z-[2] pointer-events-none max-lg:hidden"
-        style={{ backgroundImage: "url('./image/background_section1.png')" }}
+        style={{ backgroundImage: "url('/image/background_section1.png')" }}
       />
 
       <div className="relative z-[1] max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-10 flex-1 flex flex-col justify-center">
@@ -51,7 +51,7 @@ export default function TeamSection() {
 
           <div className="rounded-3xl overflow-hidden max-w-[500px] mx-auto">
             <img
-              src="./image/image%205.jpeg"
+              src="/image/image%205.jpeg"
               alt="Team photo"
               className="w-full h-auto block"
             />

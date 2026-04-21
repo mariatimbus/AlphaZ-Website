@@ -20,7 +20,7 @@ export default function Navbar({ items = defaultNavItems }) {
         className="flex items-center gap-2 sm:gap-3 no-underline text-inherit shrink-0"
       >
         <img
-          src="./image/logo.png"
+          src="/image/logo.png"
           alt="AlphaZ Logo"
           className="h-7 sm:h-8 lg:h-10 w-auto"
         />

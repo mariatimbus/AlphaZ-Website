@@ -16,7 +16,7 @@ export default function SponsorsSection() {
         </h2>
 
         <img
-          src="./image/sponsors%20logo.png"
+          src="/image/sponsors%20logo.png"
           alt="Our Sponsors"
           className="w-full max-w-[1000px] h-auto block mx-auto transition-all duration-400 hover:scale-[1.02] hover:brightness-110"
         />
