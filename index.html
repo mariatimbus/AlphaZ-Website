@@ -28,18 +28,23 @@
 
     <!-- Titlu pagină + favicon -->
     <title>AlphaZ #11141</title>
-    <link rel="icon" type="image/png" href="/AlphaZ-Website/icon.png" />
+    <link rel="icon" type="image/png" href="/icon.png" />
 
     <!-- Fonturi Google: Audiowide (titluri) + Lato (text) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/AlphaZ-Website/assets/main-DUnY-7h4.js"></script>
-    <link rel="modulepreload" crossorigin href="/AlphaZ-Website/assets/useScrollAnimate-BjKwFXfl.js">
-    <link rel="stylesheet" crossorigin href="/AlphaZ-Website/assets/useScrollAnimate-kMmbaMGn.css">
+    <script type="module" crossorigin src="/assets/main-DizL2Tpi.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/useScrollAnimate-DgK0ZCkm.js">
+    <link rel="stylesheet" crossorigin href="/assets/useScrollAnimate-CATK6MQy.css">
   </head>
 
   <body>
+    <script>
+      if (window.location.pathname.endsWith('/index.html')) {
+        window.location.replace(window.location.pathname.replace('/index.html', '/') + window.location.search + window.location.hash);
+      }
+    </script>
     <div id="root"></div>
   </body>
 </html>
