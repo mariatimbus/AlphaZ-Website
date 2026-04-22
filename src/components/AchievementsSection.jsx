@@ -1,8 +1,8 @@
 import { useScrollAnimate } from '../hooks/useScrollAnimate';
 
 const achievements = [
-  { title: 'Rookie All-Star', subtitle: 'Award Winner', highlight: '' },
-  { title: 'Quality', subtitle: 'Award Winner', highlight: '' },
+  { title: 'Rookie All-Star', subtitle: 'Award Winner', highlight: 'Ankara Regional' },
+  { title: 'Quality', subtitle: 'Award Winner', highlight: 'Başkent Regional' },
   { title: '1st Pick', subtitle: 'Alliance 4', highlight: 'Ankara Regional' },
   { title: 'Captain', subtitle: 'Alliance 3', highlight: 'Başkent Regional' },
 ];

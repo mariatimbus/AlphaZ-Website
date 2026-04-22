@@ -9,6 +9,8 @@ const teamMembers = [
   { name: 'Burtan Ovidiu', role: 'Technical Department', image: '/image/Team/Ovidiu-Burtan.png' },
   { name: 'Zamfira Rares', role: 'Technical Department', image: '/image/Team/Rares-Zamfira.png' },
   { name: 'Ghita Robert', role: 'Technical Department', image: '/image/Team/Robert-Ghita.png' },
+  { name: 'Paun Robert', role: 'Technical Department', image: '/image/Team/robert%20paun.jpeg' },
+  { name: 'Vulpoiu Stefan', role: 'Technical Department', image: '/image/Team/Stefan-Vulpoiu.png' },
 ];
 
 export default function TeamGridSection() {
@@ -32,14 +34,14 @@ export default function TeamGridSection() {
 
         <div
           ref={gridRef}
-          className={`grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6 ${
+          className={`flex flex-wrap justify-center gap-4 sm:gap-5 lg:gap-6 ${
             gridVisible ? 'animate-fade-in-up delay-1' : 'opacity-0'
           }`}
         >
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="relative flex flex-col items-center"
+              className="relative flex flex-col items-center w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.833rem)] lg:w-[calc(25%-1.125rem)]"
             >
               {/* Card with background */}
               <div

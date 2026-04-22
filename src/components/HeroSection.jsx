@@ -27,11 +27,11 @@ export default function HeroSection() {
 
       <div className="flex-1 flex items-center justify-center relative px-4 sm:px-6 lg:px-10">
         {/* Robot image — positioned higher */}
-        <div className="absolute bottom-[15%] sm:bottom-[18%] left-1/2 -translate-x-1/2 lg:left-[30%] lg:translate-x-[-50%] w-full max-w-[1000px] flex items-center justify-center">
+        <div className="absolute bottom-[22%] sm:bottom-[25%] left-1/2 -translate-x-1/2 lg:left-[28%] lg:translate-x-[-50%] w-full max-w-[1000px] flex items-center justify-center">
           <img
             src="/image/robot.png"
             alt="AlphaZ Robot"
-            className="w-full max-w-[85vw] sm:max-w-[70vw] lg:max-w-[700px] h-auto relative z-[2] opacity-90 lg:opacity-100"
+            className="w-full max-w-[95vw] sm:max-w-[80vw] lg:max-w-[850px] h-auto relative z-[2] opacity-90 lg:opacity-100"
           />
         </div>
 
