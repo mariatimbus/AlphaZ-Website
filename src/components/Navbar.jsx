@@ -4,6 +4,7 @@ const defaultNavItems = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Team', href: '/team/' },
+  { label: 'Press', href: '/press/' },
   { label: 'Sponsors', href: '#sponsors' },
   { label: 'Road to Worlds', href: 'https://donez.alphaz.ro', external: true },
 ];

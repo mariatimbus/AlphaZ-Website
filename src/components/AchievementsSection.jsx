@@ -1,15 +1,27 @@
 import { useScrollAnimate } from '../hooks/useScrollAnimate';
 
-const achievements = [
-  { title: 'Rookie All-Star', subtitle: 'Award Winner', highlight: 'Ankara Regional' },
-  { title: 'Quality', subtitle: 'Award Winner', highlight: 'Başkent Regional' },
-  { title: '1st Pick', subtitle: 'Alliance 4', highlight: 'Ankara Regional' },
-  { title: 'Captain', subtitle: 'Alliance 3', highlight: 'Başkent Regional' },
+const events = [
+  {
+    name: 'Ankara Regional',
+    url: 'https://frc-events.firstinspires.org/2026/TUAK/awards',
+    awards: ['Rookie All-Star Award Winner', '1st Pick Alliance 4'],
+  },
+  {
+    name: 'Başkent Regional',
+    url: 'https://frc-events.firstinspires.org/2026/TUAK2/awards',
+    awards: ['Quality Award Winner', 'Captain Alliance 3'],
+  },
+  {
+    name: 'FIRST Championship',
+    url: 'https://frc-events.firstinspires.org/2026/DALY/awards',
+    awards: ['Rookie All-Star Award Winner -', 'Daly Division'],
+    championship: true,
+  },
 ];
 
 function Trophy() {
   return (
-    <div className="w-[45px] h-[60px] sm:w-[55px] sm:h-[70px] lg:w-[70px] lg:h-[90px] mb-2 sm:mb-3 lg:mb-5 relative">
+    <div className="w-[45px] h-[60px] sm:w-[55px] sm:h-[70px] lg:w-[70px] lg:h-[90px] relative shrink-0">
       <div className="trophy-handle trophy-handle-left" />
       <div className="trophy-handle trophy-handle-right" />
       <div className="trophy-body">
@@ -52,7 +64,7 @@ export default function AchievementsSection() {
             }`}
           >
             {/* Left logo card */}
-            <div className="flex-[0_0_160px] sm:flex-[0_0_200px] lg:flex-[0_0_260px] flex items-center justify-center bg-black/40 border-2 border-white/20 rounded-2xl p-4 sm:p-6 max-lg:w-[160px] sm:max-lg:w-[200px]">
+            <div className="flex-[0_0_160px] sm:flex-[0_0_200px] lg:flex-[0_0_260px] flex items-center justify-center bg-black/40 rounded-2xl p-4 sm:p-6 max-lg:w-[160px] sm:max-lg:w-[200px]">
               <img
                 src="/image/logo%20rebuild.png"
                 alt="Rebuilt"
@@ -61,34 +73,38 @@ export default function AchievementsSection() {
             </div>
 
             {/* Right content */}
-            <div className="flex-1 flex flex-col justify-between gap-5 sm:gap-6 lg:gap-8 max-lg:w-full">
-              {/* 4 achievements in a row */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-                {achievements.map((ach) => (
-                  <div
-                    key={ach.title + ach.subtitle}
-                    className="text-center flex flex-col items-center transition-transform duration-300 hover:-translate-y-1.5 group"
-                  >
-                    <div className="group-hover:[&_.trophy-body]:drop-shadow-[0_0_10px_rgba(103,254,254,0.5)]">
-                      <Trophy />
-                    </div>
-                    <p className="font-[Lato] text-white text-sm sm:text-base lg:text-[22px] leading-snug m-0 mb-1 sm:mb-2">
-                      {ach.title}
-                      <br />
-                      {ach.subtitle}
-                    </p>
-                    {ach.highlight && (
-                      <span className="font-[Audiowide] text-[#67fefe] text-sm sm:text-base lg:text-[22px]">
-                        {ach.highlight}
-                      </span>
-                    )}
+            <div className="flex-1 flex flex-col justify-center gap-5 sm:gap-6 lg:gap-8 max-lg:w-full">
+              {events.map((event) => (
+                <a
+                  key={event.name}
+                  href={event.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex items-center gap-4 sm:gap-6 lg:gap-8 py-3 sm:py-4 lg:py-5 px-4 sm:px-6 lg:px-8 rounded-lg transition-transform duration-300 hover:-translate-y-1 group cursor-pointer ${
+                    event.championship
+                      ? 'bg-gradient-to-r from-[#3a8a9a] to-[#5aaaaa]'
+                      : ''
+                  }`}
+                >
+                  <div className="group-hover:[&_.trophy-body]:drop-shadow-[0_0_10px_rgba(103,254,254,0.5)]">
+                    <Trophy />
                   </div>
-                ))}
-              </div>
-
-              <div className="bg-gradient-to-r from-[#3a8a9a] to-[#5aaaaa] py-3 sm:py-4 lg:py-5 px-4 sm:px-6 lg:px-10 text-center font-[Audiowide] text-white text-sm sm:text-base lg:text-[22px] rounded-lg w-full">
-                FIRST Championship Qualification in our rookie season
-              </div>
+                  <div className="flex flex-col">
+                    <h3
+                      className={`font-[Audiowide] text-base sm:text-lg lg:text-[22px] mb-1 sm:mb-2 ${
+                        event.championship ? 'text-white' : 'text-[#67fefe]'
+                      }`}
+                    >
+                      {event.name}
+                    </h3>
+                    <ul className="list-disc list-inside font-[Lato] text-white text-sm sm:text-base lg:text-[18px] leading-snug">
+                      {event.awards.map((award) => (
+                        <li key={award}>{award}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         </div>

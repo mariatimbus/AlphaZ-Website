@@ -11,6 +11,7 @@ export default defineConfig({
       input: {
         main: './index.html',
         team: './team/index.html',
+        press: './press/index.html',
       },
     },
   },

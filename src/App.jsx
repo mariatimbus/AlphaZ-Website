@@ -3,6 +3,7 @@ import CTASection from './components/CTASection';
 import AboutSection from './components/AboutSection';
 import AchievementsSection from './components/AchievementsSection';
 import SponsorsSection from './components/SponsorsSection';
+import ContactFooter from './components/ContactFooter';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <AboutSection />
       <AchievementsSection />
       <SponsorsSection />
+      <ContactFooter />
     </>
   );
 }
