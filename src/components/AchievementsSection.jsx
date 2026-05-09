@@ -68,6 +68,8 @@ export default function AchievementsSection() {
               <img
                 src="/image/logo%20rebuild.png"
                 alt="Rebuilt"
+                loading="lazy"
+                decoding="async"
                 className="max-w-full h-auto block"
               />
             </div>

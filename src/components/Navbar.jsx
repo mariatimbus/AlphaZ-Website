@@ -23,6 +23,9 @@ export default function Navbar({ items = defaultNavItems }) {
         <img
           src="/image/logo.png"
           alt="AlphaZ Logo"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
           className="h-7 sm:h-8 lg:h-10 w-auto"
         />
         <span className="font-[Audiowide] text-sm sm:text-base lg:text-xl tracking-wide text-white">

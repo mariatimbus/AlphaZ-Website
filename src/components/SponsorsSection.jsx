@@ -18,6 +18,8 @@ export default function SponsorsSection() {
         <img
           src="/image/sponsors%20logo.png"
           alt="Our Sponsors"
+          loading="lazy"
+          decoding="async"
           className="w-full max-w-[1000px] h-auto block mx-auto transition-all duration-400 hover:scale-[1.02] hover:brightness-110"
         />
       </div>

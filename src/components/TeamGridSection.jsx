@@ -1,16 +1,16 @@
 import { useScrollAnimate } from '../hooks/useScrollAnimate';
 
 const teamMembers = [
-  { name: 'Timbus Maria', role: 'Non-Technical Department', image: '/image/Team/Maria%20Timbus.png' },
-  { name: 'Constantinescu Alice', role: 'Non-Technical Department', image: '/image/Team/Alice%20Constantinescu.PNG' },
-  { name: 'Ciornai Alexandru', role: 'Technical Department', image: '/image/Team/Alexandru-Ciornai.png' },
-  { name: 'Perja Ianis', role: 'Technical Department', image: '/image/Team/Ianis-Perja.png' },
-  { name: 'Diaconeasa Mihai', role: 'Technical Department', image: '/image/Team/Mihai-Diaconeasa.png' },
-  { name: 'Burtan Ovidiu', role: 'Technical Department', image: '/image/Team/Ovidiu-Burtan.png' },
-  { name: 'Zamfira Rares', role: 'Technical Department', image: '/image/Team/Rares-Zamfira.png' },
-  { name: 'Ghita Robert', role: 'Technical Department', image: '/image/Team/Robert-Ghita.png' },
-  { name: 'Paun Robert', role: 'Technical Department', image: '/image/Team/robert%20paun.jpeg' },
-  { name: 'Vulpoiu Stefan', role: 'Technical Department', image: '/image/Team/Stefan-Vulpoiu.png' },
+  { name: 'Timbus Maria', role: 'Non-Technical Department', image: '/image/Team/Maria%20Timbus.webp' },
+  { name: 'Constantinescu Alice', role: 'Non-Technical Department', image: '/image/Team/Alice%20Constantinescu.webp' },
+  { name: 'Ciornai Alexandru', role: 'Technical Department', image: '/image/Team/Alexandru-Ciornai.webp' },
+  { name: 'Perja Ianis', role: 'Technical Department', image: '/image/Team/Ianis-Perja.webp' },
+  { name: 'Diaconeasa Mihai', role: 'Technical Department', image: '/image/Team/Mihai-Diaconeasa.webp' },
+  { name: 'Burtan Ovidiu', role: 'Technical Department', image: '/image/Team/Ovidiu-Burtan.webp' },
+  { name: 'Zamfira Rares', role: 'Technical Department', image: '/image/Team/Rares-Zamfira.webp' },
+  { name: 'Ghita Robert', role: 'Technical Department', image: '/image/Team/Robert-Ghita.webp' },
+  { name: 'Paun Robert', role: 'Technical Department', image: '/image/Team/robert%20paun.webp' },
+  { name: 'Vulpoiu Stefan', role: 'Technical Department', image: '/image/Team/Stefan-Vulpoiu.webp' },
 ];
 
 export default function TeamGridSection() {
@@ -58,6 +58,9 @@ export default function TeamGridSection() {
                   <img
                     src={member.image}
                     alt={member.name}
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority="low"
                     className="w-full h-full object-cover block"
                     style={{
                       transform: member.name === 'Timbus Maria' || member.name === 'Zamfira Rares' ? 'scale(1.15)' : 'scale(1.4)',

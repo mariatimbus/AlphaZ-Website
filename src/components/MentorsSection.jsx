@@ -1,7 +1,7 @@
 import { useScrollAnimate } from '../hooks/useScrollAnimate';
 
 const mentors = [
-  { name: 'Alex Deonise', role: 'Mentor', image: '/image/Team/Mentors/Alex%20deonise.png' },
+  { name: 'Alex Deonise', role: 'Mentor', image: '/image/Team/Mentors/Alex%20deonise.webp' },
 ];
 
 export default function MentorsSection() {
@@ -50,6 +50,8 @@ export default function MentorsSection() {
                     <img
                       src={mentor.image}
                       alt={mentor.name}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover block"
                       style={{ transform: 'scale(1)', objectPosition: 'center 15%' }}
                     />

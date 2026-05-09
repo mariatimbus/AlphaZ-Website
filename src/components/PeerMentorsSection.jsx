@@ -1,8 +1,8 @@
 import { useScrollAnimate } from '../hooks/useScrollAnimate';
 
 const peerMentors = [
-  { name: 'Olaru Bianca', role: 'Peer Mentor', image: '/image/Team/Bianca-Olaru.png' },
-  { name: 'Popidan Cristian', role: 'Peer Mentor', image: '/image/Team/Cristian-Popidan.png' },
+  { name: 'Olaru Bianca', role: 'Peer Mentor', image: '/image/Team/Bianca-Olaru.webp' },
+  { name: 'Popidan Cristian', role: 'Peer Mentor', image: '/image/Team/Cristian-Popidan.webp' },
 ];
 
 export default function PeerMentorsSection() {
@@ -50,6 +50,8 @@ export default function PeerMentorsSection() {
                   <img
                     src={mentor.image}
                     alt={mentor.name}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover block"
                     style={{ transform: 'scale(1.4)', objectPosition: 'center 15%' }}
                   />

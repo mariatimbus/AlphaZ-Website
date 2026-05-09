@@ -15,11 +15,12 @@ export default function HeroCanvas({ sectionRef }) {
     let animationId;
     let startTime = Date.now();
 
+    const isTouchDevice = window.matchMedia('(pointer: coarse)').matches || navigator.maxTouchPoints > 0;
     const dotSize = 2;
-    const gap = 24;
+    const gap = isTouchDevice ? 36 : 24;
     const baseColor = "#404040";
     const glowColor = "#22d3ee";
-    const proximity = 120;
+    const proximity = isTouchDevice ? 0 : 120;
     const glowIntensity = 1;
     const waveSpeed = 0.5;
 
@@ -68,7 +69,21 @@ export default function HeroCanvas({ sectionRef }) {
       }
     }
 
+    let isVisible = true;
+    const handleVisibility = () => {
+      isVisible = document.visibilityState !== 'hidden';
+      if (isVisible && !animationId) {
+        animationId = requestAnimationFrame(draw);
+      }
+    };
+    document.addEventListener('visibilitychange', handleVisibility);
+
     function draw() {
+      if (!isVisible) {
+        animationId = null;
+        return;
+      }
+
       const dpr = window.devicePixelRatio || 1;
       ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
 
@@ -154,6 +169,7 @@ export default function HeroCanvas({ sectionRef }) {
       window.removeEventListener('resize', handleResize);
       section.removeEventListener('mousemove', handleMouseMove);
       section.removeEventListener('mouseleave', handleMouseLeave);
+      document.removeEventListener('visibilitychange', handleVisibility);
     };
   }, [sectionRef]);
 

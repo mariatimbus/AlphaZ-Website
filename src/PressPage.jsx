@@ -7,13 +7,13 @@ const pressItems = [
     title: 'Premieră pentru România: Premiu la Campionatul Mondial FIRST Robotics Competition',
     source: 'Antena Pitești',
     href: 'https://www.facebook.com/share/v/18etNoNNk6/?mibextid=wwXIfr',
-    image: '/image/antena%20pitesti.png',
+    image: '/image/antena%20pitesti.webp',
   },
   {
     title: 'Echipa AlphaZ premiată la Campionatul Mondial FIRST Robotics Competition',
     source: 'Ancheta Online',
     href: 'https://anchetaonline.ro/echipa-alphaz-premiata-la-campionatul-mondial-first-robotics-competition-315243/',
-    image: '/image/ancheta.png',
+    image: '/image/ancheta.webp',
   },
   {
     title: 'AlphaZ a câștigat premiul Rookie All-Star la Campionatul Mondial FIRST Robotics Competition în divizia Daly',
@@ -46,6 +46,8 @@ function PressCard({ title, source, href, image }) {
           <img
             src={image}
             alt={title}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover"
           />
         </div>

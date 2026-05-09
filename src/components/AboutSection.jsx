@@ -50,6 +50,8 @@ export default function AboutSection() {
             <img
               src="/image/image%201.jpeg"
               alt="Team image 1"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover block"
             />
           </div>
@@ -57,6 +59,8 @@ export default function AboutSection() {
             <img
               src="/image/image%202.jpeg"
               alt="Team image 2"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover block"
             />
           </div>
@@ -64,6 +68,8 @@ export default function AboutSection() {
             <img
               src="/image/image%203.jpeg"
               alt="Team image 3"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover block"
             />
           </div>

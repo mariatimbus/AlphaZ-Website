@@ -53,6 +53,8 @@ export default function TeamSection() {
             <img
               src="/image/image%205.jpeg"
               alt="Team photo"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto block"
             />
           </div>

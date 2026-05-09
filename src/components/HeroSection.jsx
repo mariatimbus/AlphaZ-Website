@@ -29,8 +29,11 @@ export default function HeroSection() {
         {/* Robot image — positioned higher */}
         <div className="absolute bottom-[22%] sm:bottom-[25%] left-1/2 -translate-x-1/2 lg:left-[28%] lg:translate-x-[-50%] w-full max-w-[1000px] flex items-center justify-center">
           <img
-            src="/image/robot.png"
+            src="/image/robot.webp"
             alt="AlphaZ Robot"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
             className="w-full max-w-[95vw] sm:max-w-[80vw] lg:max-w-[850px] h-auto relative z-[2] opacity-90 lg:opacity-100"
           />
         </div>
